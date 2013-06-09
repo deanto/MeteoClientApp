@@ -88,7 +88,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MeteoServer\MeteoServer.csproj">
+    <ProjectReference Include="..\MeteoServerApp\MeteoServer.csproj">
       <Project>{4B9E9B1A-71B7-4CC9-8C68-4037158B7C90}</Project>
       <Name>MeteoServer</Name>
     </ProjectReference>
