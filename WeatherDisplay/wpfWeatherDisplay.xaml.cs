@@ -27,6 +27,7 @@ namespace WPFClient.WeatherDisplay
         {
             InitializeComponent();
             slider1.Maximum = 1000;
+            
         }
 
 
@@ -43,7 +44,7 @@ namespace WPFClient.WeatherDisplay
         private WeatherCalculating wc;
         public WeatherCalculating WC { set { wc = value; } }
 
-
+        
 
         List<WeatherCadr> video;
         int videopos;
@@ -95,7 +96,7 @@ namespace WPFClient.WeatherDisplay
             }
 
             slider1.Value = videopos;
-
+            textBox2.Text = videopos.ToString();
             videopos++;
 
 
@@ -105,6 +106,12 @@ namespace WPFClient.WeatherDisplay
               List<WeatherCadr> newvideo =  wc.GetWeatherFromCadr(video[video.Count - 1], video[video.Count-1].TIME + 1, user, weather);
               for (int i = 0; i < newvideo.Count; i++) video.Add(newvideo[i]);
             }
+
+
+            // закрасим в rectangle2 столько  - сколько у нас есть загруженного видео
+            rectangle2.Width = video.Count * (slider1.Width / slider1.Maximum);
+            
+            rectangle2.Fill = Brushes.Pink;
             
         }
 
@@ -138,5 +145,50 @@ namespace WPFClient.WeatherDisplay
         {
             ShowVideo();
         }
+
+        private void chageStep(object sender, TextChangedEventArgs e)
+        {
+            if (dispatcherTimer!=null)
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, Convert.ToInt32(textBox1.Text));
+        }
+        bool stopped=false;
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            if (dispatcherTimer != null)
+            {
+                dispatcherTimer.Stop();
+                stopped = true;
+            }
+        }
+
+        private void slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (stopped)
+            {
+                if (slider1.Value < video.Count)
+                {
+                    videopos = (int)slider1.Value;
+                    ShowCadr();
+                }
+                else slider1.Value = video.Count - 1;
+            }
+        }
+
+        private void slider1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+           
+        }
+
+        private void slider1_MouseEnter(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void slider1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+
+
     }
 }
