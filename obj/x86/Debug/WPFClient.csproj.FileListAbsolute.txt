@@ -43,3 +43,5 @@ C:\Users\deanto\Documents\GitHub\MeteoClientApp\obj\x86\Debug\WPFClient.g.resour
 C:\Users\deanto\Documents\GitHub\MeteoClientApp\obj\x86\Debug\WPFClient.Properties.Resources.resources
 C:\Users\deanto\Documents\GitHub\MeteoClientApp\obj\x86\Debug\ResGen.read.1.tlog
 C:\Users\deanto\Documents\GitHub\MeteoClientApp\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\deanto\Documents\GitHub\MeteoClientApp\obj\x86\Debug\WeatherDisplay\wpfWeatherDisplay.baml
+C:\Users\deanto\Documents\GitHub\MeteoClientApp\obj\x86\Debug\WeatherDisplay\wpfWeatherDisplay.g.cs

@@ -91,6 +91,8 @@ namespace WPFClient
 
         private void button1_Click_1(object sender, RoutedEventArgs e)
         {
+            WeatherDisplay.wpfDisplay wpfd = new WeatherDisplay.wpfDisplay();
+            wpfd.ShowWeather(current, textBox1.Text, textBox2.Text);
             
         }
 

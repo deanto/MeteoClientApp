@@ -4,8 +4,12 @@
         Title="MainWindow" Height="429" Width="652">
     <Grid>
         <Label Content="METeo Service Client v1.0" Height="26" HorizontalAlignment="Left" Margin="463,352,0,0" Name="label1" VerticalAlignment="Top" FontWeight="Bold" />
-        <RichTextBox Height="210" HorizontalAlignment="Left" Margin="45,49,0,0" Name="richTextBox1" VerticalAlignment="Top" Width="298" />
-        <Label Content="Доступные карты" Height="28" HorizontalAlignment="Left" Margin="48,26,0,0" Name="label2" VerticalAlignment="Top" />
-        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="163,292,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click_1" />
+        <RichTextBox Height="210" HorizontalAlignment="Left" Margin="42,83,0,0" Name="richTextBox1" VerticalAlignment="Top" Width="298" />
+        <Label Content="Доступные карты" Height="28" HorizontalAlignment="Left" Margin="45,60,0,0" Name="label2" VerticalAlignment="Top" />
+        <Button Content="Посмотреть погоду" Height="23" HorizontalAlignment="Left" Margin="390,245,0,0" Name="button1" VerticalAlignment="Top" Width="192" Click="button1_Click_1" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="379,117,0,0" Name="textBox1" VerticalAlignment="Top" Width="225" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="379,185,0,0" Name="textBox2" VerticalAlignment="Top" Width="225" />
+        <Label Content="Карта" Height="28" HorizontalAlignment="Left" Margin="390,97,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Погода" Height="28" HorizontalAlignment="Left" Margin="390,160,0,0" Name="label4" VerticalAlignment="Top" />
     </Grid>
 </Window>
