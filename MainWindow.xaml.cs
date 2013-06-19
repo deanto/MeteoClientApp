@@ -12,11 +12,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
-
 using MeteoServer.Components;
 using MeteoServer.Components.UserManagement;
 using MeteoServer.Objects;
+
+using MeteoServer.Components.WeatherCalculating;
 
 using MeteoServer.Components.FileManagement;
 
@@ -82,6 +82,16 @@ namespace WPFClient
             for (int i = 0; i < listtree.subdirectorys.Count; i++)
                 FillTreeList(listtree.subdirectorys[i]);
 
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            
         }
 
     }
